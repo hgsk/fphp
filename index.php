@@ -1,4 +1,8 @@
 <?php
+require __DIR__ . '/vendor/autoload.php';
 
+command('hi');
 header("Access-Control-Allow-Origin: *");
-echo json_encode(['foo' => 'bar']);
+
+$a = new Controller\Test();
+echo Controller\User::index();

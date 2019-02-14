@@ -1,5 +1,14 @@
 {
     "require": {
         "ihor/nspl": "^1.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Domain\\": "src/Domain/",
+            "Controller\\": "src/Controller/"
+        },
+        "files": [
+		"src/lambda.php"
+        ]
     }
 }
